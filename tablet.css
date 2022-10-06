@@ -1,0 +1,19 @@
+@media (max-width: 624px){
+    .cards{
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    }
+    main{
+        height: 100%;
+    }
+    .card1{
+        margin-bottom: 20px;
+    }
+    .cards input{
+        border-radius: 5px;
+    }
+    .centralizarCard{
+        flex-direction: column;
+    }
+}

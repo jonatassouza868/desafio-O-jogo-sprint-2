@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Roboto:wght@100&family=Squada+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    
+    background-color: orange;
+    display: flex;
+    justify-content:center;
+    margin-top: 150px;
+    
+}
+main{
+width: 80%;
+
+background-color: white;
+border-radius: 5px;
+display: flex;
+position: relative;
+justify-content: center;
+font-family: 'Squada One', cursive;
+
+}
+.jogo{
+    width: 258px;
+    height: 100px;
+    background-color: blue;
+    position: absolute;
+    top: -43px;
+    border-radius: 5px;
+    text-align: center;
+}
+.jogo h1{
+   font-size: 74px;
+   margin-top: 13px;
+   margin-bottom: 13px;
+}
+img{
+width: 200px;
+height: 200px;
+margin-top: 20px;
+}
+.cards{
+    display: flex;
+    justify-content: space-around;
+}
+p{
+   font-size: 25px;
+   margin-bottom: 5px;
+   font-weight: 500;
+}
+input{
+    width: 350px;
+    height: 43px;
+    margin-bottom: 61px;
+}
+select{
+    width: 350px;
+    height: 43px;
+}
+button{
+    width: 350px;
+    height: 42px;
+    border-radius: 20px;
+    border-color: black;
+    margin-top: 65px;
+    font-family: 'Squada One', cursive;
+}
+.card1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.card2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.centralizarCard{
+    display: flex;
+  align-items: center;
+}
+/* responsividade computador */
+@media (min-width: 624px){
+    .input{
+        width: 350px;
+    }
+}
+/* responsividade telefeone */
+@media (max-width: 320px){
+    .cards{
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    }
+    .card1{
+        margin-bottom: 20px;
+        
+    }
+    .centralizarCards, .input, .botaocomecar, .botaochutar{
+        border-radius: 20px;
+        width: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .card2{
+        margin-top: 20px;
+       
+    }
+    #btncomecar{
+        width: 250px;
+    }
+    #intervalo{
+        width: 250px;
+        border-radius: 20px;
+    }
+    
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>o jogo</title>
+    <link rel="stylesheet" href="celular.css">
+    <link rel="stylesheet" href="jogo.css">
+    <link rel="stylesheet" href="tablet.css">
+</head>
+
+<body>
+    <main>
+
+        <div class="jogo" id="jogo">
+            <h1>O JOGO</h1>
+        </div>
+
+        <div class="cards">
+            <div class="centralizarCard">
+
+
+                <div class="card1">
+                    <img src="./image 1.png">
+                    <p>Nick :</p>
+                    <input type="text" id="nome" class="input">
+                    <br>
+                    <p>Intevalo :</p>
+                    <select name="Intervalo" id="intervalo" class="select">
+                        <option id="nivel1" value="1">Opção 1: 1 a 10</option>
+                        <option id="nivel2" value="2">Opção 2: 1 a 50</option>
+                        <option id="nivel3" value="3">Opção 3: 1 a 100</option>
+                    </select>
+                    <br>
+                    <button type="submit" onclick="trocar_nome()" id="btncomecar" class="botaochutar">
+                        <p> COMEÇAR</p>
+                    </button>
+                </div>
+                <div class="card2">
+                    <p>Olá</p>
+                    <p class="jogador">Fulano</p>, vamos jogar!
+                    De acordo com a opção de intervalo que
+                    você escolheu, descubra o número.</p>
+                    <br>
+                    <p>Digite um Numero :</p>
+                    <input class="input" type="number" id="inputnumero"><br>
+                    <button class="botaocomecar" type="submit" id="btnchutar">
+                        <p> JOGAR </p>
+                    </button>
+
+                    <p id="numero"></p>
+                    <p id="tentativas"></p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="java.js"></script>
+</body>
+
+</html>
