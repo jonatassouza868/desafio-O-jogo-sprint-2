@@ -8,11 +8,13 @@ trocar_nome = () => {
 }
 
 
-let input = document.getElementById('inputnumero')
-let botao1 = document.getElementById('btncomecar')
-let botao2 = document.getElementById('btnchutar')
-let select_intervalo = document.getElementById('intervalo')
-let tentativas = document.getElementById('tentativas')
+let input = document.getElementById('inputnumero');
+let botao1 = document.getElementById('btncomecar');
+let botao2 = document.getElementById('btnchutar');
+let select_intervalo = document.getElementById('intervalo');
+let tentativas = document.getElementById('tentativas');
+let chances = document.querySelector('.chances');
+let tentativas1 = 3;
 
 let valor;
 
@@ -35,6 +37,9 @@ botao1.addEventListener('click', dificuldade)
 let numero = document.getElementById('numero')
 console.log(numero);
 const resposta = () =>{
+
+    tentativas1--
+
     if(input.value > valor){
         numero.innerHTML = 'O numero é menor'
     }
@@ -46,5 +51,11 @@ const resposta = () =>{
     }
     console.log(valor,'numero');
     console.log(input.value,'input');
+
+    if (tentativas1 >= 1) {
+        chances.innerHTML = '<p>' + 'Você ainda tem ' + tentativas1 + ' tentativas!' + '</p>'
+    }
+    else{
+        chances.innerHTML = '<p>' + 'Suas tentativas acabam! Por favor reinicie o jogo.' + '</p>'}
 }
 botao2.addEventListener('click', resposta)
