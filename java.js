@@ -1,3 +1,4 @@
+// nome do jogador
 let nome = document.getElementById('nome')
 
 let trocar;
@@ -17,7 +18,7 @@ let chances = document.querySelector('.chances');
 let tentativas1 = 3;
 
 let valor;
-
+// dificuldades
 const dificuldade = () => {
     if (select_intervalo.value == 1) {
         valor = (Math.random() * 11).toFixed(0);
@@ -33,7 +34,7 @@ const dificuldade = () => {
 botao1.addEventListener('click', dificuldade)
 
 
-
+// numero de chances
 let numero = document.getElementById('numero')
 console.log(numero);
 const resposta = () =>{
